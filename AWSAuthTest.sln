@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSAuthTest", "AWSAuthTest\AWSAuthTest.csproj", "{DC35367D-6206-4FCA-80E5-61317B975AAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC35367D-6206-4FCA-80E5-61317B975AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC35367D-6206-4FCA-80E5-61317B975AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC35367D-6206-4FCA-80E5-61317B975AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC35367D-6206-4FCA-80E5-61317B975AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41173301-B851-4B09-AEB1-7D4E66D9B28A}
+	EndGlobalSection
+EndGlobal
