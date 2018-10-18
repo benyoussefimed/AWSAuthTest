@@ -27,7 +27,12 @@ namespace AWSAuthTest.Controllers
         
         
         
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [HttpPost("~/api/authenticate")]
         public async Task<ActionResult<bool>> Authenticate(string email, string password)
@@ -38,6 +43,11 @@ namespace AWSAuthTest.Controllers
             return Ok((user != null));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         [Authorize]
         [HttpPost("~/api/confidentials")]
         public async Task<ActionResult<bool>> Confidentials(string email)

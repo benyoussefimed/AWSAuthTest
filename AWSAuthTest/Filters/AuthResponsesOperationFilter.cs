@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace AWSAuthTest.Filters
 {
+    
     public class AuthResponsesOperationFilter : IOperationFilter
     {
         public void Apply(Operation operation, OperationFilterContext context)

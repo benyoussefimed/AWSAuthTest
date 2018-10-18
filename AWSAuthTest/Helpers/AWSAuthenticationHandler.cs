@@ -14,6 +14,10 @@ using System.Threading.Tasks;
 
 namespace AWSAuthTest.Helpers
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class AWSAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
 
@@ -61,17 +65,15 @@ namespace AWSAuthTest.Helpers
             try
             {
                 var authHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
-                var credentialBytes = Convert.FromBase64String(authHeader.Parameter);
-                var data = Encoding.UTF8.GetString(credentialBytes).Replace(AWSSchemeName, "").Trim();
 
-                var credentials = data.Split(':');
+                var credentials = authHeader.Parameter.Split(':');
                 if (credentials.Length != 2)
                 {
                     return AuthenticateResult.Fail("Invalid Basic authentication header");
                 }
                 var accessKeyId = credentials[0];
-                var signature = credentials[1];
-                client = await _clientService.Authorisation(accessKeyId, signature);
+                var secretAccessKey = credentials[1];
+                client = await _clientService.Authorisation(accessKeyId, secretAccessKey);
             }
             catch(Exception ex)
             {
