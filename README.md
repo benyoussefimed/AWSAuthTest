@@ -7,6 +7,5 @@ Exemples d'implémentation le même mode d’authentification que AWS
  - SecretAccessKey:	wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 # HTTP Header
-
-Authorize AWS AKIAIOSFODNN7EXAMPLE:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+- Authorize AWS AKIAIOSFODNN7EXAMPLE:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
